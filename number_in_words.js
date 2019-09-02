@@ -38,20 +38,20 @@ function numberToWords(number) {
 }
 
 // Driver code
-// console.log(numberToWords(121));
-// console.log(numberToWords(15));
-// console.log(numberToWords(25));
-// console.log(numberToWords(924));
-// console.log(numberToWords(1924));
-// console.log(numberToWords(1111));
-// console.log(numberToWords(2222));
-// console.log(numberToWords(3000));
-// console.log(numberToWords(99024));
-// console.log(numberToWords(3000));
-// console.log(numberToWords(190000));
-// console.log(numberToWords(1000000));
-// console.log(numberToWords(2011845));
-// console.log(numberToWords(999999999));
-// console.log(numberToWords(9999999999));
+console.log(numberToWords(121));
+console.log(numberToWords(15));
+console.log(numberToWords(25));
+console.log(numberToWords(924));
+console.log(numberToWords(1924));
+console.log(numberToWords(1111));
+console.log(numberToWords(2222));
+console.log(numberToWords(3003));
+console.log(numberToWords(99024));
+console.log(numberToWords(3000));
+console.log(numberToWords(190000));
+console.log(numberToWords(1000000));
+console.log(numberToWords(2011845));
+console.log(numberToWords(999999999));
+console.log(numberToWords(9999999999));
 console.log(numberToWords(99999999999));
 console.log(numberToWords(9999999999999));
