@@ -10,6 +10,7 @@ function numberToWords(number) {
   if (number < 100) return numberToWords(number / 10) + ' puluh ' + ((number % 10 == 0) ? '' : numberToWords(number % 10))
   if (number < 200) return 'seratus ' + ((number % 100 == 0) ? '' : numberToWords(number % 100))
   if (number < 1000) return numberToWords(number / 100) + ' ratus ' + ((number % 100 == 0) ? '' : numberToWords(number % 100))
+  if (number < 2000) return 'seribu ' + ((number % 100 == 0) ? '' : numberToWords(number % 100))
   if (number < 1e6) return numberToWords(number / 1000) + ' ribu ' + ((number % 1000 == 0) ? '' : numberToWords(number % 1000))
   if (number < 1e9) return numberToWords(number / 1e6) + ' juta ' + ((number % 1e6 == 0) ? '' : numberToWords(number % 1e6))
   if (number < 1e12) return numberToWords(number / 1e9) + ' milyar ' + ((number % 1e9 == 0) ? '' : numberToWords(number % 1e9))
