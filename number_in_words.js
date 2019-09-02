@@ -16,7 +16,7 @@ function numberToWords(number) {
       output += 'seratus ';
       number = number - 100;
     } else if(number < 1000) {
-      return numberToWords(Math.floor(number/100)) + ' ratus ' + numberToWords(number % 100);
+      return output + numberToWords(Math.floor(number/100)) + ' ratus ' + numberToWords(number % 100);
     } else if(number < 10000) {
       if(Math.floor(number/1000) === 1) {
         output = output + 'seribu ';
@@ -25,13 +25,13 @@ function numberToWords(number) {
       }
       number = number % 1000;
     } else if(number < 1000000) {
-      return numberToWords(Math.floor(number/1000)) + ' ribu ' + numberToWords(number % 1000);
+      return output + numberToWords(Math.floor(number/1000)) + ' ribu ' + numberToWords(number % 1000);
     } else if(number < 1000000000) {
-      return numberToWords(Math.floor(number/1000000)) + ' juta ' + numberToWords(number % 1000000);
+      return output + numberToWords(Math.floor(number/1000000)) + ' juta ' + numberToWords(number % 1000000);
     } else if(number < 1000000000000) {
-      return numberToWords(Math.floor(number/1000000000)) + ' milyar ' + numberToWords(number % 1000000000);
+      return output + numberToWords(Math.floor(number/1000000000)) + ' milyar ' + numberToWords(number % 1000000000);
     } else if(number < 1000000000000000) {
-      return numberToWords(Math.floor(number/1000000000000)) + ' trilyun ' + numberToWords(number % 1000000000000);
+      return output + numberToWords(Math.floor(number/1000000000000)) + ' trilyun ' + numberToWords(number % 1000000000000);
     }
   }
   return output;
@@ -44,14 +44,14 @@ function numberToWords(number) {
 // console.log(numberToWords(924));
 // console.log(numberToWords(1924));
 // console.log(numberToWords(1111));
+// console.log(numberToWords(2222));
 // console.log(numberToWords(3000));
 // console.log(numberToWords(99024));
 // console.log(numberToWords(3000));
 // console.log(numberToWords(190000));
 // console.log(numberToWords(1000000));
 // console.log(numberToWords(2011845));
-console.log(numberToWords(834095785));
-console.log(numberToWords(8034095785));
-
-console.log(numberToWords(80340957085));
+// console.log(numberToWords(999999999));
+// console.log(numberToWords(9999999999));
+console.log(numberToWords(99999999999));
 console.log(numberToWords(9999999999999));
