@@ -53,5 +53,8 @@ console.log(numberToWords(1000));
 console.log(numberToWords(111));
 console.log(numberToWords(1111));
 console.log(numberToWords(11111));
+console.log(numberToWords(111111));
+console.log(numberToWords(1111111));
+console.log(numberToWords(11111111));
 console.log(numberToWords(1000000));
 console.log(numberToWords(2011845));
