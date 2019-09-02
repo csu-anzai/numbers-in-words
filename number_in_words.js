@@ -39,10 +39,10 @@ function numberToWords(number) {
     }
     return numberToWords(number / 1000000000) + ' milyar ' + numberToWords(number % 1000000000)
   } else if (number < 1000000000000000) {
-    if (num % 1000000000000 === 0) {
+    if (number % 1000000000000 === 0) {
       return numberToWords(number / 1000000000000) + ' triliun'
     }
-    return numberToWords(number / 1000000000000) + ' triliun ' + numberToWords(num % 1000000000000)
+    return numberToWords(number / 1000000000000) + ' triliun ' + numberToWords(number % 1000000000000)
   }
 }
 
@@ -58,3 +58,4 @@ console.log(numberToWords(1111111));
 console.log(numberToWords(11111111));
 console.log(numberToWords(1000000));
 console.log(numberToWords(2011845));
+console.log(numberToWords(1111111111111));
